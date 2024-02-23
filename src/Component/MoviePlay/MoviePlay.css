@@ -1,0 +1,9 @@
+.card-play {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+iframe {
+  margin-top: 100px;
+}

@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  text-decoration: none;
 }
 body {
   background-color: rgb(35, 35, 35);
@@ -39,4 +40,10 @@ select {
   background: none;
   height: 15px;
   width: 15px;
+}
+link {
+  color: white;
+}
+link:active {
+  text-decoration: none;
 }

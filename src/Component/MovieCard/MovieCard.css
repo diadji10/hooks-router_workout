@@ -33,10 +33,13 @@ h2 {
   font-family: "Montserrat", sans-serif;
 }
 p {
+  color: white;
+  text-decoration: none;
   font-weight: lighter;
   font-family: "Open Sans", sans-serif;
 }
 .MovieCard span {
   position: relative;
   bottom: 0;
+  color: white;
 }
