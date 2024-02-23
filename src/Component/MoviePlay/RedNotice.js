@@ -1,7 +1,10 @@
 import React from "react";
 import Header from "../Header/Header";
 import "./MoviePlay.css";
+import { useNavigate } from "react-router-dom";
+
 const RedNotice = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <Header />
@@ -25,6 +28,9 @@ const RedNotice = () => {
           ce qu’il semble alors qu’une série de doubles croisements s’ensuit
         </p>
       </div>
+      <button onClick={() => navigate("/")}>
+        <i class="fa-solid fa-left-long"></i>Retour
+      </button>
     </div>
   );
 };

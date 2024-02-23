@@ -1,7 +1,10 @@
 import React from "react";
 import Header from "../Header/Header";
 import "./MoviePlay.css";
+import { useNavigate } from "react-router-dom";
+
 const TylerRake = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <Header />
@@ -17,7 +20,7 @@ const TylerRake = () => {
             allowfullscreen
           ></iframe>
         </div>
-        <h1>Athena</h1>
+        <h1>Tyler Rake</h1>
         <br />
         <p>
           Tyler Rake est un mercenaire intrépide qui travaille dans l'ombre.
@@ -25,6 +28,9 @@ const TylerRake = () => {
           mafieux, pour l'heure incarcéré, de sauver son fils qui a été enlevé
         </p>
       </div>
+      <button onClick={() => navigate("/")}>
+        <i class="fa-solid fa-left-long"></i>Retour
+      </button>
     </div>
   );
 };

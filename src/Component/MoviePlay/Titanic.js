@@ -1,7 +1,10 @@
 import React from "react";
 import Header from "../Header/Header";
 import "./MoviePlay.css";
+import { useNavigate } from "react-router-dom";
+
 const Titanic = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <Header />
@@ -24,6 +27,9 @@ const Titanic = () => {
           mais pauvre à bord du luxueux et infortuné R.M.S
         </p>
       </div>
+      <button onClick={() => navigate("/")}>
+        <i class="fa-solid fa-left-long"></i>Retour
+      </button>
     </div>
   );
 };

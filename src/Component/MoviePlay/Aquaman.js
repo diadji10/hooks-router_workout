@@ -1,7 +1,9 @@
 import React from "react";
 import Header from "../Header/Header";
 import "./MoviePlay.css";
+import { useNavigate } from "react-router-dom";
 const Aquaman = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <Header />
@@ -25,6 +27,9 @@ const Aquaman = () => {
           l’océan et de la terre
         </p>
       </div>
+      <button onClick={() => navigate("/")}>
+        <i class="fa-solid fa-left-long"></i>Retour
+      </button>
     </div>
   );
 };

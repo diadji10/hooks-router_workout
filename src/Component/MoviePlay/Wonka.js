@@ -1,7 +1,10 @@
 import React from "react";
 import Header from "../Header/Header";
 import "./MoviePlay.css";
+import { useNavigate } from "react-router-dom";
+
 const Wonka = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <Header />
@@ -25,6 +28,9 @@ const Wonka = () => {
           dirigée par un cartel de chocolatiers cupides
         </p>
       </div>
+      <button onClick={() => navigate("/")}>
+        <i class="fa-solid fa-left-long"></i>Retour
+      </button>
     </div>
   );
 };
